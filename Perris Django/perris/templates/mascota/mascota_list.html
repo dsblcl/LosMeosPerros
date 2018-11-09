@@ -1,0 +1,107 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+{% load static %}
+<style>
+#tabla img 
+{
+width: 45%;
+
+}
+#tabla img 
+{
+width: 45%;
+
+}
+
+.Admin ul
+{
+   display: flex ;
+   
+   margin-top: 30px;
+   margin-right: 350px;
+  
+}
+.Admin li a 
+{
+    padding: 10px; 
+    color: aquamarine;
+    text-decoration: none ; 
+    font-size: 20px;
+}
+
+
+.Admin li 
+{
+    list-style: none ; 
+   
+   
+
+}
+
+</style>
+<div>
+		<nav class="Admin">
+    
+				<ul>
+					<li>
+						<a href="{% url 'mascota_crear' %}">Agregar Perrito </a>
+					</li>
+				
+					<li>
+						<a href="#">Eliminar Perrito</a>
+					</li>
+				
+					<li>
+						<a href="#">Listar Perrito</a>
+					</li>
+				
+					<li>
+						<a href="#">Editar Perrito</a>
+					</li>
+					
+
+				</ul>
+			</nav>
+
+</div>
+<div>
+<table id="tabla" class="table table-bordered">
+	<thead>
+		<tr>
+			<td>#</td>
+			<td>Nombre</td>
+			<td>Sexo</td>
+			<td>Descripcion</td>
+			<td>Fecha de Rescate</td>
+			<td>Estado</td>
+			<td>Fotos</td>
+			<td>Acciones</td>
+		</tr>
+		
+	</thead>
+	
+	<tbody>
+		{% if mascotas %}
+		{% for mascota in mascotas %}
+		<tr>
+            <td>{{ mascota.id }}</td>
+			<td>{{ mascota.nombre }}</td>
+			<td>{{ mascota.sexo }}</td>
+			<td>{{ mascota.Descripcion }}</td>
+			<td>{{ mascota.fecha_rescate }}</td>
+			<td>{{mascota.estado}}</td>
+            <td><img src="{{mascota.foto.url}}" alt=""></td>
+            <td><a class="btn btn-primary" href="{% url 'mascota_editar' mascota.id %}" >Editar</a>
+            <td><a class="btn btn-danger" href="{% url 'mascota_eliminar' mascota.id %}" >Eliminar</a>
+            </td>
+		</tr>
+		{% endfor %}
+		
+		{% else %}
+		<h1>No hay registros de mascotas</h1>
+		{% endif %}
+	</tbody>
+</table> 
+</div>
+{% endblock%}

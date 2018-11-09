@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+{% load static %}
+<style>
+.Elim form 
+{
+margin-left: 38%;
+margin-top: 10%;
+}
+.bull img 
+{
+width:  50%;
+margin-top: 6.5%;
+margin-left: 25%;
+}
+</style>
+<div class="Elim">
+<form method="post">
+	{% csrf_token %}
+	<h3>¿Desea eliminar el registro de {{ mascota.nombre }}?</h3>	
+	<button class="btn btn-danger" type="submit">Sí, eliminar</button>	<a class= "btn btn-default" href="{% url 'mascota_listar' %}">Cancelar</a>
+</form>
+
+</div>
+<div class="bull">
+		<img src="{%static 'img/boceto.png'%}" alt="">
+</div>
+{% endblock %}

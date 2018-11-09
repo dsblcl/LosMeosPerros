@@ -1,0 +1,180 @@
+
+@media screen and (max-width:1366px)
+{
+    .content-portada{  
+    width: 100%;
+    height: 350px;
+    background: #6dccaa;
+   margin-top: -10%;
+    }
+
+    .img-face 
+    {
+        width: 30px;
+        position:relative ;
+        right: 290px;
+        top: 241px;
+    }
+    
+    .img-google
+    {
+        width: 30px;
+        position:relative ;
+        right: 196px;
+        top: 241px;
+    }
+    
+    .img-insta
+    {
+        width: 30px;
+        position:relative ;
+        right: 193px;
+        top: 241px;
+    }
+    
+    .img-correo
+    {
+        width: 30px;
+        position:relative ;
+        right: 100px;
+        top: 241px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .content-portada{  
+    width: 100%;
+    height: 350px;
+    background: #6dccaa;
+   margin-top: -10%;
+    }
+
+
+    .img-face 
+    {
+        width: 30px;
+        position:relative ;
+        right: 290px;
+        top: 241px;
+    }
+    
+    .img-google
+    {
+        width: 30px;
+        position:relative ;
+        right: 196px;
+        top: 241px;
+    }
+    
+    .img-insta
+    {
+        width: 30px;
+        position:relative ;
+        right: 193px;
+        top: 241px;
+    }
+    
+    .img-correo
+    {
+        width: 30px;
+        position:relative ;
+        right: 100px;
+        top: 241px;
+    }
+    
+}
+
+@media (max-width: 768px)
+{
+    .content-portada{  
+    width: 100%;
+    height: 350px;
+    background: #6dccaa;
+   margin-top: -10%;
+    }
+
+
+    .img-face 
+    {
+        width: 30px;
+        position:relative ;
+        right: 290px;
+        top: 241px;
+    }
+    
+    .img-google
+    {
+        width: 30px;
+        position:relative ;
+        right: 196px;
+        top: 241px;
+    }
+    
+    .img-insta
+    {
+        width: 30px;
+        position:relative ;
+        right: 193px;
+        top: 241px;
+    }
+    
+    .img-correo
+    {
+        width: 30px;
+        position:relative ;
+        right: 100px;
+        top: 241px;
+    }
+}
+@media (max-width: 480px)
+{
+    .content-portada{  
+    width: 100%;
+    height: 350px;
+    background: #6dccaa;
+   margin-top: 0%;
+    }
+
+
+    .img-face 
+    {
+        width: 40px;
+        position:relative ;
+        right: 250px;
+        top: 10px;
+    }
+    
+    .img-google
+    {
+        width: 40px;
+        position:relative ;
+        right: 100px;
+        top: 10px;
+    }
+    
+    .img-insta
+    {
+        width: 40px;
+        position:relative ;
+        right: 20px;
+        top: 10px;
+    }
+    
+    .img-correo
+    {
+        width: 40px;
+        position:relative ;
+        right: -10px;
+        top: 10px;
+    }
+    
+
+ .carousel-inner img {
+      width: 100%;
+      height: 50%;
+      margin-left: 0px;
+      
+  }
+
+}

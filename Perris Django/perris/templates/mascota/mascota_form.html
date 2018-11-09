@@ -1,0 +1,85 @@
+{% extends 'base/base.html'%}
+
+{% block content %}
+{% load static %}
+<style>
+.Agre form
+{
+    margin-left: 38%;
+    margin-top: 3%;
+}
+
+#pelo
+{
+   width: 30%;
+   margin-top: -50%;
+}
+#mimi
+{
+    width: 30%;
+   margin-top: -10.9%;
+   margin-left: 30%;
+}
+.Admin ul
+{
+   display: flex ;
+   
+   margin-top: 30px;
+   margin-right: 350px;
+  
+}
+.Admin li a 
+{
+    padding: 10px; 
+    color: aquamarine;
+    text-decoration: none ; 
+    font-size: 20px;
+}
+
+
+.Admin li 
+{
+    list-style: none ; 
+   
+   
+
+}
+</style>
+
+
+<div>
+		<nav class="Admin">
+    
+				<ul>
+					<li>
+						<a href="{% url 'mascota_crear' %}">Agregar Perrito </a>
+					</li>
+				
+					<li>
+						<a href="{% url 'mascota_listar' %}">Eliminar Perrito</a>
+					</li>
+				
+					<li>
+						<a href="{% url 'mascota_listar' %}">Listar Perrito</a>
+					</li>
+				
+					<li>
+						<a href="{% url 'mascota_listar' %}">Editar Perrito</a>
+					</li>
+					
+
+				</ul>
+			</nav>
+
+<div class="Agre">
+<form method="post"enctype="multipart/form-data">
+    
+    {%csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Guardar</button>
+</form>
+
+<img src="{% static 'img/pelotalindapechocha.jpg' %}" id="pelo" alt="">
+<img src="{%static 'img/mimi.png'%}"  id="mimi" alt="">
+</div>
+{%endblock%}

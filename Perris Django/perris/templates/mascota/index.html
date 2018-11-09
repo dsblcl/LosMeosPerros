@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% load static %}
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="iconos/css/fontello.css">
+<link rel="stylesheet" href="{% static 'css/menu.css'%}">
+<link rel="stylesheet" href="{% static 'css/perrito.css'%}">
+<link rel="stylesheet" href="{% static 'css/resposive.css'%}">
+<link rel="stylesheet" href="{% static 'css/lightbox.min.css'%}">      
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+
+  </style>
+</head>
+
+    <body>
+        <header>
+            
+            <img src="{%static 'img/logo.png'%}" class="img-logo">
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu"></label>
+        
+        
+            <nav class="menu">
+
+                <ul>
+                    <li>
+                        <a href="{% url 'index' %}">Inicio</a>
+                    </li>
+                
+                    <li>
+                        <a href="#">Quiénes Somos</a>
+                    </li>
+                
+                    <li>
+                        <a href="#">Servicio</a>
+                    </li>
+                
+                    <li>
+                        <a href="#">Contáctanos</a>
+                    </li>
+                    
+                    <li>
+                        <a href="{% url 'login' %}">Login</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+        <!–-Todo los div tienen que ir dentro del main , ademas de poner todo lo que es estetica en el css perrito -–>
+
+        <main>
+            <div class="carou" >
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'img/Apolo.jpg'%}" alt="Los Angeles" width="1100" height="500">
+                             
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img  src="{% static 'img/Duque.jpg'%}" alt="Chicago" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'img/Tom.jpg' %}" alt="New York" width="1100" height="500">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                
+                </div>
+            <!-Esta es la parte de fondo verde->
+                    <div class="content-one">
+                       
+    
+    
+                       
+                        <div class="content-portada">
+                    
+                            <div class="content-item1">
+                                
+                                <div >
+                        
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            <!-parte con fondo blanco->
+            
+            <div class="content-fondo">
+                    <div class="content-imagen22">
+                        <div class="content-text">
+                            <h1 class="texto-rescate">RESCATE</h1>
+                            <FONT color="grey" FACE="courier new" class=texto-etapa>ETAPA UNO </FONT>
+                            <h2 class="texto-bajo">___________</h2>
+                        
+                            <div class="content-textol"> 
+                                <h3 class="texto-largo">Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los </h3>
+                            
+                                <h3 class="texto-largo2">preparamos para buscarles un hogar.</h3>         
+                            </div> 
+                 
+                         </div>
+                        <div class="content-rescate"><img src="{% static 'img/rescate.jpg' %}"  class="img-rescate"></div>
+                  </div>
+
+                        <div class="content-comida">
+                           
+                            <div>
+                                 <img class="img-comida" src="{% static 'img/crowfunding.jpg' %}" alt=""></div>
+                                    <h1 class="texto-rescate">CROWFUNDING</h1>
+                                    <FONT color="grey" FACE="courier new"  class=texto-etapa>FINANCIAMIENTO </FONT>
+                                    <h2 class="texto-bajo">___________</h2>
+                                
+                                    <div class="content-textol2">
+                                    <h3 class=" texto-largo3">Sigue nuestras redes sociales para informate acerca de las diversas campañas y </h3>
+                                    <h3 class="texto-lar">actividades que realizamos para obtener financiamiento para seguir ayudando.</h3>
+                                        <div class="content-boton">
+                                            <a href="" class="boton_1">Adopta un Dog ♥</a>
+                                       
+                                        </div>
+                            
+                                 </div>
+                              </div>
+                        
+                     
+
+            
+                          </div>
+    
+            
+          
+            
+            <div class="galeria-res">
+                <h3> Adopta Un Perrito ♥</h3> 
+                <articles class="row">
+                   
+                    
+                
+                <article class="col-md-3">
+                    <a href="{% static 'img/rescatados/Bigotes.jpg' %}" data-lightbox="example-set" data-title="Bigotes">
+                        <img src="{% static 'img/rescatados/Bigotes_tn.jpg' %}" alt="Apolo" class="img-thumbnail"></a>
+                        <p> </p>
+                </article>
+                 
+                 
+                <article class="col-md-3">
+                    <a href="{% static 'img/rescatados/Chocolate.jpg'%}" data-lightbox="example-set" data-title="Chocolate">
+                        <img src="{% static 'img/rescatados/Chocolate_tn.jpg'%}" alt="Apolo" class="img-thumbnail"></a>
+                        <p> </p>
+                </article>
+                
+                <article class="col-md-3">
+                    <a href="{% static 'img/rescatados/Luna.jpg'%}" data-lightbox="example-set" data-title="Luna">
+                        <img src="{% static 'img/rescatados/Luna_tn.jpg'%}" alt="Apolo" class="img-thumbnail"></a>
+                        <p> </p>
+                </article>
+                
+                <article class="col-md-3">
+                    <a href="{% static 'img/rescatados/Maya.jpg'%}" data-lightbox="example-set" data-title="Maya">
+                        <img src="{% static 'img/rescatados/Maya_tn.jpg'%}" alt="Apolo" class="img-thumbnail"></a>
+                        <p> </p>
+                </article>
+                
+                <article class="col-md-3">
+                    <a href="{% static 'img/rescatados/Oso.jpg'%}" data-lightbox="example-set" data-title="Oso">
+                        <img src="{% static 'img/rescatados/Oso_tn.jpg'%}" alt="Apolo" class="img-thumbnail"></a>
+                        <p> </p>
+                </article>
+                
+                <article class="col-md-3">
+                    <a href="{% static 'img/rescatados/Pexel.jpg'%}" data-lightbox="example-set" data-title="Pexel">
+                        <img src="{% static 'img/rescatados/Pexel_tn.jpg'%}" alt="Apolo" class="img-thumbnail"></a>
+                        <p> </p>
+                </article>
+                
+                <article class="col-md-3">
+                    <a href="{% static 'img/rescatados/Wifi.jpg'%}" data-lightbox="example-set" data-title="Wifi">
+                        <img src="{% static 'img/rescatados/Wifi_tn.jpg'%}" alt="Apolo" class="img-thumbnail"></a>
+                        <p> </p>
+                </article>
+                    
+                </articles>
+            </div>
+    
+        </main>
+
+   <script src="{% static 'js/lightbox.min.js'%}"></script>
+  <script>
+  lightbox.option({
+  'albumLabel': "Imagen %1 de %2"
+  });
+  </script>
+    
+    
+    
+  
+    
+    
+    </body>
+
+</html>

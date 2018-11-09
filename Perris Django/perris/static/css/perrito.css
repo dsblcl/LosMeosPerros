@@ -1,0 +1,266 @@
+/*Css de todos los div e imagenes */
+
+main{
+    position: relative;
+    
+}
+
+.galeria-res{
+    
+    width: 100%;
+    position: relative;
+   margin-top: 15%;
+   
+    
+}
+
+.galeria-adop{
+    
+    width: 100%;
+    position: relative;
+    
+    margin-top: 50%;
+    
+    
+}
+.formul
+{
+    margin-left: 20%;
+}
+
+ .carousel-inner img {
+      width: 50%;
+      height: 50%;
+      margin-left: 25%;
+      
+  }
+.img-perro
+{
+width: 1200px;
+position: relative ;
+right: -395px;
+background:#6dccaa;
+}
+.content-one{
+    width: 100%;
+    clear:both;
+    
+}
+
+.content-portada{
+    width: 100%;
+    height:200px;
+    background: #6dccaa;
+    margin-top: -5.1%;
+   
+
+}
+
+.content-piePagina img
+{
+ 
+display: flex;
+float: right;
+}
+.img-face 
+{
+    width: 60px;
+    position:relative ;
+    right: 493px;
+    top: 50px;
+}
+
+.img-google
+{
+    width: 60px;
+    position:relative ;
+    right: 300px;
+    top: 50px;
+}
+
+.img-insta
+{
+    width: 60px;
+    position:relative ;
+    right: 290px;
+    top: 50px;
+}
+
+.img-correo
+{
+    width: 60px;
+    position:relative ;
+    right: 100px;
+    top: 50px;
+}
+
+
+.texto1{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.texto2{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    color: white;
+    margin-left: 50px ;
+    margin-top: -50px;
+}
+
+
+.content-fondo 
+{
+background: white;
+width: auto;
+height: 600px;
+
+}
+
+.content-imagen22
+{
+    width: 49%;
+    height: 400px;
+    background: white ;
+    float: left
+}
+
+
+.content-comida
+{
+    width: 50%;
+    height: 555px;
+    background: white(89, 0, 255) ;   
+    float: right;
+
+
+}
+
+.content-rescate
+{
+margin-left: 62%;
+margin-top:3%
+
+}
+.galeria-res h3
+{
+   margin-left: 30%;
+   font-family: cursive;
+   width: 70em; font-size: 5em; 
+}
+.texto-largo2
+{
+  text-align: right; 
+}
+
+.content-text 
+{
+  
+    text-align: right; 
+}
+
+.content-textol
+{
+    font-size: 90%;
+    font-weight: normal;
+    text-align: right; 
+    margin-top: 3%;
+    color: gray;
+    font-family: 'Franklin Gothic Medium';
+    
+
+}
+
+.content-textol2
+{
+    font-size: 90%;
+    font-weight: normal; 
+    margin-top: 3%;
+    color: gray;
+    font-family: 'Franklin Gothic Medium';
+    
+
+}
+
+.img-rescate
+{
+
+    margin-right: 100%;
+    max-width: 100%;
+    max-height: 50vh;
+    margin: auto
+    ;
+}
+.img-comida 
+{
+    margin-right: 100%;
+    max-width: 100%;
+    max-height: 50vh;
+    margin-top: 1%;
+}
+
+.content-boton
+{
+    margin-top: 3%;  
+    height: 80px;
+}
+
+.boton_1{
+    
+    text-decoration: none;
+    padding: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: initial;
+    color: #050505;
+    background-color: #ffffff;
+    border-radius: 0px;
+    border: 2px double #000000;
+   
+  }
+  .boton_1:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+.Agregar
+{
+    background: white;
+    width: 50%;
+    height: 893px;
+   float: left;
+}
+.content-ojos
+{
+   float: right;
+   width: 50%;
+}
+
+.content-ojos img
+{
+    width: 90%;
+    margin-top: 0%;
+}
+.form-group
+{
+    width: 50%;
+}
+
+.img-lengua
+{
+    margin-left: 33%;
+    margin-top: 20%;
+}
+.carou
+{
+background: #6dccaa;    
+}
+
+
